@@ -1,0 +1,31 @@
+###
+GET http://localhost:4000
+
+###
+GET http://localhost:4000/api/v1/products
+
+###
+GET http://localhost:4000/api/v1/products/6af1be62f6ee03e0b2264c5a
+
+
+###
+POST http://localhost:4000/api/v1/products
+Content-Type: application/json
+
+{
+    "name":"power bank",
+
+    "price":55500,
+    "quantity":12
+}
+
+###
+PUT http://localhost:4000/api/v1/products/6af1be62f6ee03e0b2264c5a  
+Content-Type:  application/json
+
+{
+    "name":"computer"
+}
+
+###
+DELETE http://localhost:4000/api/v1/products/6af1be62f6ee03e0b2264c5a
