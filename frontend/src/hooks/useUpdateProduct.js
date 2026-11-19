@@ -12,6 +12,7 @@ export function useUpdateProduct (){
 
         })
         toast.success ("product updated succesfully")
+        
       },
       onError:(error)=>{
         console.error(error)
